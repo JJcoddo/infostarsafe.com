@@ -120,24 +120,7 @@ body {
     100% { transform: translateX(0%); }
 }
 
-/* Media queries per dispositivi più piccoli */
-@media (max-width: 768px) {
-    .carousel-item img {
-        object-fit: contain; /* Cambia il comportamento delle immagini sui dispositivi più piccoli */
-    }
-    .descrizione {
-        size: 4px;
-    }
-}
 
-@media (max-width: 480px) {
-    .carousel-container {
-        max-width: 100%;
-    }
-    .descrizione {
-        size: 4px;
-    }
-}
 
 .introduzione {
     color: brown;

@@ -88,14 +88,15 @@ body {
 
 /* Stile per il contenitore del carosello */
 .carousel-container {
-    width:30%;
-    max-width: 30%;
+    width:45%;
+    
     height: auto;
     overflow: hidden;
     margin: 0 auto;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombra intorno al carosello */
-    
+    background-color: white;
+   
 }
 
 

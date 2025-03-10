@@ -118,7 +118,7 @@ body::after {
 
 .carousel {
     display: flex;
-    animation: slide 100s  infinite;
+    animation: slide 60s  infinite ;
 }
 
 /* Stile per il contenitore del carosello */
@@ -148,27 +148,11 @@ body::after {
 
 /* Animazione ciclica */
 @keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-    16.66% {
-        transform: translateX(-100%);
-    }
-    33.33% {
-        transform: translateX(-200%);
-    }
-    50% {
-        transform: translateX(-300%);
-    }
-    66.66% {
-        transform: translateX(-400%);
-    }
-    83.33% {
-        transform: translateX(-500%);
-    }
-    100% {
-        transform: translateX(0);
-    }
+    0% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
 }
 
 /* Media queries per dispositivi più piccoli */

@@ -1,5 +1,5 @@
 #sotto {
-    color: chocolate;
+    color: brown;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     display: flex;
@@ -11,20 +11,256 @@
     
 
 }
-.titolo{
-    color: blue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
 
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.starsafe {
-    position: absolute;
-    left: 20%;
-    
-   
-}
 
 body {
-    background-color: blanchedalmond;
+    font-family: 'Arial', sans-serif;
+   
+    background-color: #f5dfc9;
+    min-height: 100vh;
+    display: flex auto;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Colore del testo bianco per contrastare lo sfondo */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
 }
+
+
+
+
+/* Aggiungere un effetto di luce al background */
+@keyframes lightEffect {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/* Aggiungere un'animazione al testo */
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px #c48e5c, -2px -2px #000000; }
+    50% { text-shadow: -2px -2px #c48e5c, 2px 2px #000000; }
+    100% { text-shadow: 2px 2px #c48e5c, -2px -2px #000000; }
+  }
+
+  .digital-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: brown;
+    text-shadow: 2px 2px #000000, -2px -2px #f67904;
+    animation: glitch 3s infinite alternate;
+    
+    
+  }
+
+
+
+
+
+
+
+
+/* Stile per il contenitore del carosello */
+.carousel-container {
+    width:30%;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombra intorno al carosello */
+    
+}
+
+
+
+
+
+/* Aggiungere un'ombra al fondo */
+body::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+.carousel-container {
+    
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    animation: slide 100s  infinite;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: auto;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Fa in modo che le immagini si adattino senza distorsioni */
+}
+
+/* Animazione ciclica */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    16.66% {
+        transform: translateX(-100%);
+    }
+    33.33% {
+        transform: translateX(-200%);
+    }
+    50% {
+        transform: translateX(-300%);
+    }
+    66.66% {
+        transform: translateX(-400%);
+    }
+    83.33% {
+        transform: translateX(-500%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Media queries per dispositivi più piccoli */
+@media (max-width: 768px) {
+    .carousel-item img {
+        object-fit: contain; /* Cambia il comportamento delle immagini sui dispositivi più piccoli */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-container {
+        max-width: 100%;
+    }
+}
+
+.introduzione {
+    color: brown;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.Swot_analysis{
+    color: brown;
+    
+}
+
+
+.neon-button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: brown;
+    background: transparent;
+    border: 2px solid rgb(255, 0, 0);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(254, 0, 0);
+    transition: 0.3s ease-in-out;
+    position: absolute ;
+    top: 20px;
+    left: 20px
+    
+   
+  }
+
+  .neon-button:hover {
+    background: rgb(236, 43, 4);
+    color: #000;
+    box-shadow: 0 0 20px rgb(253, 1, 1), 0 0 40px rgb(0, 0, 0);
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit; 
+  }
+
+  .SWOT {
+   
+    border-image-width: 60%;
+  
+  }
+
+  .neon-button2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: brown;
+    background: transparent;
+    border: 2px solid rgb(255, 0, 0);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(254, 0, 0);
+    transition: 0.3s ease-in-out;
+    position: absolute ;
+    top: 80px;
+    left: 20px
+    
+   
+  }
+
+  .neon-button2:hover {
+    background: rgb(236, 43, 4);
+    color: #000;
+    box-shadow: 0 0 20px rgb(253, 1, 1), 0 0 40px rgb(0, 0, 0);
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit; 
+  }
+ 

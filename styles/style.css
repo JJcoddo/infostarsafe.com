@@ -235,4 +235,14 @@ body {
 }
 
 
+@media only screen and (max-width: 480px) {
+    img {
+      width: 100%;
+    }
+  }
 
+  @media only screen and (max-width: 720px) {
+    img {
+      width: 100%;
+    }
+  }

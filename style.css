@@ -1,13 +1,30 @@
-.cioccolato {
+#sotto {
     color: chocolate;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 10px;
+    
 
 }
+.titolo{
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+
+}
+
+.starsafe {
+    position: absolute;
+    left: 20%;
+    
+   
+}
+
 body {
     background-color: blanchedalmond;
-}
-#polpette {
-    margin-top: 50px;
-    
 }
